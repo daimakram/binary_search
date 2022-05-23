@@ -1,8 +1,7 @@
 # function that finds target value inside array using Binary Search.
 def search(arr,target):
     mid = len(arr)//2 
-    steps = 0                  # since "mid" variable will get updated each time inside loop, we cannot return mid as index of variable.
-                               # we need an additional variable "steps", to store index relative to orginal array.
+    steps = 0           # since "mid" variable will get updated each time inside loop, we cannot return mid as index of variable. we need an additional variable "steps", to store index relative to orginal array.
     while mid > 0 or len(arr) >= 1:    
         if arr[mid] == target:                       # if found
             return steps + mid                       # return counter + mid
